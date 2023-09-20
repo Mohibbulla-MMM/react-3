@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+nav a.active {
+  /* text-decoration: underline; */
+  border-bottom: 2px solid white;
+
+}
+
+.homebg {
+  background-color: rgba(0, 0, 0, 0.467);
+  background-image: url("https://i.ibb.co/RTBsP8t/bg-image.png");
+  /* linear-gradient(rgba(0, 0, 0, 0.211), rgba(0, 0, 0, 0.167)); */
+  background-blend-mode: overlay;
+  background-position: center center;
+  background-size: cover;
+}
+
+/* https://i.ibb.co/wRR6zws/ph-sun.png */
+.homebg2 {
+  /* background-color: rgba(0, 0, 0, 0.467); */
+  background-image: url("https://i.ibb.co/wRR6zws/ph-sun.png");
+  /* background-blend-mode: inherit, overlay; */
+  background-position: top center;
+  background-size: 40vw;
+  background-repeat: no-repeat;
+}
+
+.mm-post-scroll::-webkit-scrollbar-thumb {
+  /* background-image: repeating-radial-gradient(); */
+  background-image: radial-gradient(rgb(255, 255, 255), black, black);
+  border-radius: 10px;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+
+.mm-post-scroll::-webkit-scrollbar {
+  background: rgb(124, 124, 124);
+  width: 15px;
+  border-radius: 10px;
+}
+
+/* .mm-post-scroll  */
