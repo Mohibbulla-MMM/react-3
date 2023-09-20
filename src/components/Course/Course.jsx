@@ -33,7 +33,7 @@ const Course = () => {
     }
   };
   return (
-    <div className="grid md:grid-cols-12 grid-cols-1 gap-2 md:px-10 px-3 bg-slate-900 py-8 ">
+    <div className="grid md:grid-cols-12 grid-cols-1 gap-2 md:px-10 px-3 bg-slate-800 py-8 ">
       <div className="col-span-1 md:col-span-9">
         <figure>
           <img className="rounded-lg" src={couseThumbnail} alt="" />
@@ -42,7 +42,7 @@ const Course = () => {
         <p className="text-lg text-gray-300">{courseDescription}</p>
       </div>
       {/* courser item  */}
-      <div className="col-span-1 md:col-span-3   bg-opacity-70">
+      <div className=" mm-course-scroll col-span-1 md:col-span-3 pr-2  max-h-screen overflow-y-scroll  rounded-md ">
         {data.map((item) => (
           <CourseItem
             key={item._id}

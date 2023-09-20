@@ -27,18 +27,29 @@ nav a.active {
   background-repeat: no-repeat;
 }
 
+/* post and course title scroll bar */
+
 .mm-post-scroll::-webkit-scrollbar-thumb {
-  /* background-image: repeating-radial-gradient(); */
   background-image: radial-gradient(rgb(255, 255, 255), black, black);
   border-radius: 10px;
   border-left: 1px solid white;
   border-right: 1px solid white;
 }
 
+.mm-course-scroll::-webkit-scrollbar-thumb {
+  background-image: radial-gradient(rgb(255, 255, 255), black, black);
+  border-radius: 10px;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  height: 50px !important;
+  width: 5px;
+}
+
+ 
+
+.mm-course-scroll::-webkit-scrollbar,
 .mm-post-scroll::-webkit-scrollbar {
   background: rgb(124, 124, 124);
   width: 15px;
   border-radius: 10px;
 }
-
-/* .mm-post-scroll  */

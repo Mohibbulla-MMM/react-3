@@ -8,8 +8,12 @@ const Home = () => {
 
   const handleCodeImage = () => {
     // handleCodeImage
-    setCodeImage(!codeImage);
+    setCodeImage(true);
   };
+  const handleCodeMouseout = () => {
+    setCodeImage(false);
+  };
+
   // const codeTextMove = (e) => {
   //   let x = e.clientX;
   //   let y = e.clientY;
@@ -28,6 +32,7 @@ const Home = () => {
         <div
           // onMouseMove={codeTextMove}
           onMouseOver={handleCodeImage}
+          onMouseOut={handleCodeMouseout}
           className="  flex justify-center items-center "
           style={{
             transform: ` rotateY(${yValue}deg)`,

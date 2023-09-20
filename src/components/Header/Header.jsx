@@ -2,8 +2,9 @@ import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { FiMenu } from "react-icons/fi";
 import { AiOutlineClose } from "react-icons/ai";
-const Header = () => {
-  const [header, setHeader] = useState(false);
+const Header = ({ setHeader ,header }) => {
+  // const [header, setHeader] = useState(false);
+
   return (
     <div className="flex justify-between items-center   p-4 shadow-md text-white font-semibold gap-3  top-0     relative">
       <Link to="/">
@@ -31,34 +32,34 @@ const Header = () => {
             header ? "right-0" : "-right-full"
           } flex  sm:flex-row flex-col  justify-center sm:items-center absolute sm:static rounded p-4 sm:px-4 w-11/12 sm:w-auto bg-gray-300 sm:bg-none bg-opacity-10 sm:bg-opacity-0   top-26 gap-3 list-none z-30 duration-500 backdrop-blur-md sm:backdrop-blur-0`}
         >
-          <NavLink
+          <NavLink onClick={() => setHeader(!header)}
             to={"/"}
             className="sm:bg-opacity-0 bg-gray-800 hover:bg-black sm:hover:bg-opacity-0 duration-300 block p-2  rounded "
           >
             Home
           </NavLink>
 
-          <NavLink
+          <NavLink onClick={() => setHeader(!header)}
             to={"/about"}
             className="sm:bg-opacity-0 bg-gray-800 hover:bg-black sm:hover:bg-opacity-0 duration-300 block p-2  rounded"
           >
             About
           </NavLink>
 
-          <NavLink
+          <NavLink onClick={() => setHeader(!header)}
             to={"/course"}
             className=" sm:bg-opacity-0 bg-gray-800 hover:bg-black sm:hover:bg-opacity-0 duration-300 block p-2  rounded"
           >
             Course
           </NavLink>
-          <NavLink
+          <NavLink onClick={() => setHeader(!header)}
             to={"/posts"}
             className=" sm:bg-opacity-0 bg-gray-800 hover:bg-black sm:hover:bg-opacity-0 duration-300 block p-2  rounded"
           >
             Posts
           </NavLink>
 
-          <NavLink
+          <NavLink onClick={() => setHeader(!header)}
             to={"/contact"}
             className="sm:bg-opacity-0 bg-gray-800 hover:bg-black sm:hover:bg-opacity-0 duration-300 block p-2  rounded"
           >
